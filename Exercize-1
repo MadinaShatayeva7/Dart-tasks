@@ -1,0 +1,12 @@
+void main() {   
+  print("Enter your name:");
+  String? name = stdin.readLineSync();
+  print("Enter your age:");
+  int? age = int.parse(stdin.readLineSync()!);
+  yearsUntilHundred() {
+    var beforeHundred;
+    beforeHundred = 100 - age;
+    return '$name вам до 100 лет еще есть $beforeHundred лет';
+  }
+  print(yearsUntilHundred());
+}
