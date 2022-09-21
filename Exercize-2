@@ -1,0 +1,12 @@
+void main() {   
+  print("Please enter your number:");
+  int num = int.parse(stdin.readLineSync()!);
+  whichNumber() {
+    if(num %2 == 0) {
+      print('Your number is even');
+    } else {
+      print('Your number is odd');
+    }
+  }
+  print(whichNumber());
+}
