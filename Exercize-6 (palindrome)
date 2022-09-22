@@ -1,6 +1,6 @@
 void main() {   
   stdout.write('Type a word: ');
-  String? word = stdin.readLineSync();
+  String? word = stdin.readLineSync()!.toLowerCase();
   String? reverse = word!.split('').reversed.join('');
   if(word == reverse){
     print('It is a palindrome');
