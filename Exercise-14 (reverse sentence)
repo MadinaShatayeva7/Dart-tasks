@@ -1,0 +1,9 @@
+void main() {   
+  stdout.write('Type a word: ');
+  String? word = stdin.readLineSync()!;
+  reverseSentence(){    
+  var reverse = word.split(' ');
+  print(reverse.reversed.join(' '));
+  }
+  reverseSentence();
+}
