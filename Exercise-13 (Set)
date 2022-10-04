@@ -1,0 +1,12 @@
+void main() {
+  final random = Random();
+  List<int> a = List.generate(10, (_) => random.nextInt(100));
+  Set<int> newA = {};
+
+  void returnNewList(){
+    newA.addAll(a);
+    print(a);
+    print(newA);
+  }
+  returnNewList();
+}
