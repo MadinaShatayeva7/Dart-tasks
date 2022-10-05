@@ -1,0 +1,20 @@
+void main() {   
+  final random = Random();
+  List<int> a = List.generate(10, (_) => random.nextInt(100));
+  List<int> b = List.generate(13, (_) => random.nextInt(100));
+  Set<int> c = {};
+
+  duplicateNumList() {
+    for(int i in a){
+      for(int j in b) {
+        if(i == j){
+          c.add(i);
+        }
+      }
+    }
+    print(a);
+    print(b);
+    print(c);
+  }
+  duplicateNumList();
+}
